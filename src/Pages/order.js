@@ -1,29 +1,23 @@
 import heroBgImage from '../assets/images/hero-banner.png';
 import heroBannerBgImage from '../assets/images/hero-banner-bg.png';
 import heroBannerImage from '../assets/images/hero-bg.jpg';
-import { Link, useLocation, useNavigate } from "react-router-dom";
+import outOfOrder from '../assets/images/outoforder.jpg';
 
- function Home(){
-
-  const Navigate=useNavigate();
-
-    function orderNow(){
-        Navigate('/order');
-    }
+function Order(){
 
     return(
         <div>
             <section className="hero" id="home" style={{ backgroundImage: `url(${heroBannerImage})` }}>
       <div className="container">
         <div className="hero-content">
-          <p className="hero-subtitle">Eat Sleep And</p>
-          <h2 className="h1 hero-title">Creating Food Culture</h2>
-          <p className="hero-text">Food is any substance consumed to provide nutritional support for an organism.</p>
-          <button className="btn" onClick={orderNow}>Book A Table</button>
+          <p className="hero-subtitle">Eat Sleep And Repeat</p>
+          <h2 className="h1 hero-title">We are Currently not taking Orders</h2>
+          {/* <p className="hero-text">Sorry for all inconvenince</p> */}
+          {/* <button className="btn" onClick={orderNow}>Book A Table</button> */}
         </div>
         <figure className="hero-banner">
           <img src={heroBannerBgImage} width="786" height="716" alt="" aria-hidden="true" className="w-100 hero-img-bg" />
-          <img src={heroBgImage} width="786" height="637" loading="lazy" alt="Burger" className="w-100 hero-img" />
+          {/* <img src={''} width="786" height="637" loading="lazy" alt="" className="w-100 hero-img" /> */}
         </figure>
       </div>
     </section>
@@ -41,4 +35,4 @@ import { Link, useLocation, useNavigate } from "react-router-dom";
     )
 }
 
-export default Home;
+export default Order;

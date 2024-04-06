@@ -56,7 +56,7 @@ function Menu(){
 
                   <div className="badge">-15%</div>
 
-                  <button className="btn food-menu-btn">Order Now</button>
+                  {/* <button className="btn food-menu-btn">Order Now</button> */}
                 </div>
 
                 <div className="wrapper">
@@ -95,7 +95,7 @@ function Menu(){
 
                   <div className="badge">-10%</div>
 
-                  <button className="btn food-menu-btn">Order Now</button>
+                  {/* <button className="btn food-menu-btn">Order Now</button> */}
                 </div>
 
                 <div className="wrapper">
@@ -134,7 +134,7 @@ function Menu(){
 
                   <div className="badge">-25%</div>
 
-                  <button className="btn food-menu-btn">Order Now</button>
+                  {/* <button className="btn food-menu-btn">Order Now</button> */}
                 </div>
 
                 <div className="wrapper">
@@ -173,7 +173,7 @@ function Menu(){
 
                   <div className="badge">-20%</div>
 
-                  <button className="btn food-menu-btn">Order Now</button>
+                  {/* <button className="btn food-menu-btn">Order Now</button> */}
                 </div>
 
                 <div className="wrapper">
@@ -212,7 +212,7 @@ function Menu(){
 
                   <div className="badge">-5%</div>
 
-                  <button className="btn food-menu-btn">Order Now</button>
+                  {/* <button className="btn food-menu-btn">Order Now</button> */}
                 </div>
 
                 <div className="wrapper">
@@ -251,7 +251,7 @@ function Menu(){
 
                   <div className="badge">-15%</div>
 
-                  <button className="btn food-menu-btn">Order Now</button>
+                  {/* <button className="btn food-menu-btn">Order Now</button> */}
                 </div>
 
                 <div className="wrapper">

@@ -1,11 +1,18 @@
+import react from 'react-dom';
 import '../assets/css/style.css';
+
+import { Link, useLocation, useNavigate } from "react-router-dom";
 
 
 
 export function Header(){
 
 
+    // const Navigate=useNavigate();
 
+    // function orderNow(){
+    //     Navigate('/order');
+    // }
     return(
         <header className="header" data-header>
     <div className="container">
@@ -18,7 +25,7 @@ export function Header(){
         <ul className="navbar-list">
 
           <li className="nav-item">
-            <a href="#home" className="navbar-link" data-nav-link>Home</a>
+            <a href="/" className="navbar-link" data-nav-link>Home</a>
           </li>
 
           <li className="nav-item">
@@ -45,7 +52,7 @@ export function Header(){
           <ion-icon name="search-outline"></ion-icon>
         </button>
 
-        <button className="btn btn-hover">Order Now</button>
+        {/* <button className="btn btn-hover" onClick={orderNow}>Order Now</button> */}
 
         <button className="nav-toggle-btn" aria-label="Toggle Menu" data-menu-toggle-btn>
           <span className="line top"></span>
