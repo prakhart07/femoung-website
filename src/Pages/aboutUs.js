@@ -6,7 +6,7 @@ import heroBannerImage from '../assets/images/hero-bg.jpg';
 function AboutUs(){
 
     return(
-        <div>
+        <div className="container">
             <section className="hero" id="about" style={{ backgroundImage: `url(${teamImage})` }}>
       <div className="container">
         {/* <div className="hero-content">
