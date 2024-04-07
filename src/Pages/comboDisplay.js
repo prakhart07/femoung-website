@@ -1,7 +1,15 @@
 import aboutBanner from '../assets/images/sale-shape-red.png';
 import combo from '../assets/images/momo+coke.jpg'; //sale-shape-red.png
+import { Link, useLocation, useNavigate } from "react-router-dom";
 
 function ComboDisplay(){
+
+
+     const Navigate=useNavigate();
+
+    function orderNow(){
+        Navigate('/order');
+    }
 
     return(
         <section className="section section-divider gray about">
@@ -55,7 +63,7 @@ function ComboDisplay(){
 
             </ul>
 
-            <button className="btn btn-hover">Order Now</button>
+            <button className="btn btn-hover" onClick={orderNow}>Order Now</button>
 
           </div>
 

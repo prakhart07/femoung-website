@@ -1,6 +1,16 @@
 import footerIllustration from '../assets/images/footer-illustration.png'; //footer-illustration.png
+import { Link, useLocation, useNavigate } from "react-router-dom";
+
+
 
  function Footer(){
+
+
+    const Navigate=useNavigate();
+
+    function orderNow(){
+        Navigate('/order');
+    }
 
     return(
         <div>
@@ -48,7 +58,7 @@ import footerIllustration from '../assets/images/footer-illustration.png'; //foo
               <input type="date" name="booking_date" aria-label="Reservation date" className="input-field" />
             </div>
             <textarea name="message" required placeholder="Message" aria-label="Message" className="input-field"></textarea>
-            <button type="submit" className="btn">Book a Table</button>
+            <button type="submit" className="btn" onClick={orderNow}>Book a Table</button>
           </form>
         </div>
       </div>

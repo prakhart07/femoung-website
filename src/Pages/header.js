@@ -33,7 +33,7 @@ export function Header(){
           </li>
 
           <li className="nav-item">
-            <a href="#about" className="navbar-link" data-nav-link>About Us</a>
+            <a href="/-#about" className="navbar-link" data-nav-link>About Us</a>
           </li>
 
           {/* <li className="nav-item">
