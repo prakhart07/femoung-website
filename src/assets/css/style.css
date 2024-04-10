@@ -333,16 +333,17 @@ body.active { overflow: hidden; }
 .header-btn-group .btn { display: none; }
 
 .header {
-  --color: var(--white);
-  --btn-color: var(--champagne-pink);
+  --color: var(--deep-saffron);
+  --btn-color: var(--deep-saffron);
 
-  position: absolute;
+  position: fixed;
   top: 0;
   left: 0;
   width: 100%;
   padding-block: 20px;
   border-block-end: 1px solid var(--champagne-pink_20);
   z-index: 4;
+  background-color: white;
 }
 
 .header.active {
