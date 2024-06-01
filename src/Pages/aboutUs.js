@@ -1,4 +1,4 @@
-import teamImage from '../assets/images/team.jpeg';
+// import teamImage from '../assets/images/team.jpeg';
 import heroBgImage from '../assets/images/hero-banner.png';
 import heroBannerBgImage from '../assets/images/hero-banner-bg.png';
 import heroBannerImage from '../assets/images/hero-bg.jpg';
