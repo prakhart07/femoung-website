@@ -7,7 +7,7 @@ function AboutUs(){
 
     return(
         <div className="container">
-            <section className="hero" id="about" style={{ backgroundImage: `url(${teamImage})` }}>
+            <section className="hero" id="about" style={{ backgroundImage: `url(${''})` }}>
       <div className="container">
         {/* <div className="hero-content">
           <p className="hero-subtitle">Eat Sleep And</p>
