@@ -3,13 +3,14 @@ import ComboDisplay from "./comboDisplay";
 import Dishes from "./dishes";
 import Footer from "./footer";
 import Home from "./homes";
+import Login from "./login";
 import Menu from "./menu";
 
 
 function MainScreen(){
 
     return(
-        <div className="App">
+        <div className="main">
             <Home/>
       <main>
             <ComboDisplay/>

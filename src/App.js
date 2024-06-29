@@ -12,18 +12,22 @@ import ComboDisplay from './Pages/comboDisplay';
 import AboutUs from './Pages/aboutUs';
 import Order from './Pages/order';
 import MainScreen from './Pages/mainScreen';
+import Login from './Pages/login';
 
 
 function App() {
   return (
     <div className="App">
+      <div>
       <Header/>
+      </div>
       <div>
       <Router>
         <Routes>
           <Route path='*' element={<MainScreen/>}></Route>
           <Route path='/' element={<MainScreen/>}></Route>
           <Route path='/order' element={<Order/>}></Route>
+          <Route path='/login' element={<Login/>}></Route>
         </Routes>
       </Router> 
       </div>      

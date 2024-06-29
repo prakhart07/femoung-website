@@ -15,7 +15,7 @@ export function Header(){
     // }
     return(
         <header className="header" data-header>
-    <div className="container">
+    <div className="container fixed-top">
 
       <h1>
         <a href="#" className="logo">femoungg<span className="span">.</span></a>
@@ -42,6 +42,10 @@ export function Header(){
 
           <li className="nav-item">
             <a href="#footer" className="navbar-link" data-nav-link>Contact Us</a>
+          </li>
+
+          <li className="nav-item">
+            <a href="/login" className="navbar-link" data-nav-link>Login</a>
           </li>
 
         </ul>
