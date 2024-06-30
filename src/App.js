@@ -17,11 +17,7 @@ import Login from './Pages/login';
 
 function App() {
   return (
-    <div className="App">
-      <div>
-      <Header/>
-      </div>
-      <div>
+    <div>
       <Router>
         <Routes>
           <Route path='*' element={<MainScreen/>}></Route>
@@ -30,7 +26,7 @@ function App() {
           <Route path='/login' element={<Login/>}></Route>
         </Routes>
       </Router> 
-      </div>      
+            
     </div>
   );
 }

@@ -1,31 +1,39 @@
 import { useState } from "react";
 import Modal from '@mui/material/Modal';
 import { Backdrop, Box, Fade } from "@mui/material";
+import { useNavigate } from "react-router-dom";
 
 
 const style = {
-    position: 'absolute',
+    position: 'relative',
     top: '50%',
     left: '50%',
     transform: 'translate(-50%, -50%)',
-    width: 400,
+    width: 600,
     bgcolor: 'background.paper',
     border: '2px solid #000',
     boxShadow: 24,
     p: 4,
+    height: '400'
   };
 
 function Login(){
+    const Navigate=useNavigate();
     const [open,setOpen]=useState(true);
+    const handleClose =()=>{
+        setOpen(false);
+        Navigate("/");
+    } 
 
     return(
-        <div className="section section-divider white promo">
-            <div className="container">
+        
+            
+            <div className="">
             <Modal
         aria-labelledby="transition-modal-title"
         aria-describedby="transition-modal-description"
         open={open}
-        // onClose={handleClose}
+        onClose={handleClose}
         closeAfterTransition
         slots={{ backdrop: Backdrop }}
         slotProps={{
@@ -52,14 +60,15 @@ function Login(){
               <label htmlFor="email" className="block text-sm font-medium leading-6 text-gray-900">
                 Email address
               </label>
-              <div className="mt-2">
+              <div className="mt-3" style={{margin:"5px"}}>
                 <input
                   id="email"
                   name="email"
                   type="email"
                   autoComplete="email"
+                  placeholder=""
                   required
-                  className="block w-full rounded-md border-0 py-1.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6"
+                  className=""
                 />
               </div>
             </div>
@@ -69,13 +78,8 @@ function Login(){
                 <label htmlFor="password" className="block text-sm font-medium leading-6 text-gray-900">
                   Password
                 </label>
-                <div className="text-sm">
-                  <a href="#" className="font-semibold text-indigo-600 hover:text-indigo-500">
-                    Forgot password?
-                  </a>
-                </div>
               </div>
-              <div className="mt-2">
+              <div className="mt-3" style={{margin:"5px"}}>
                 <input
                   id="password"
                   name="password"
@@ -85,12 +89,17 @@ function Login(){
                   className="block w-full rounded-md border-0 py-1.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6"
                 />
               </div>
+              <div className="text-sm" style={{margin:"5px"}}>
+                  <a href="#" className="font-semibold text-indigo-600 hover:text-indigo-500">
+                    Forgot password?
+                  </a>
+                </div>
             </div>
 
-            <div>
+            <div style={{margin:"5px"}}>
               <button
                 type="submit"
-                className="flex w-full justify-center rounded-md bg-indigo-600 px-3 py-1.5 text-sm font-semibold leading-6 text-white shadow-sm hover:bg-indigo-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600"
+                className="btn"
               >
                 Sign in
               </button>
@@ -102,8 +111,8 @@ function Login(){
         </Fade>
       </Modal>
             
-      </div>
-      </div>
+      </div> 
+      
     );
 
 

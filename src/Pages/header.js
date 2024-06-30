@@ -5,7 +5,7 @@ import { Link, useLocation, useNavigate } from "react-router-dom";
 
 
 
-export function Header(){
+function Header(){
 
 
     // const Navigate=useNavigate();
@@ -69,3 +69,4 @@ export function Header(){
   </header>
     )
 }
+export default Header;
