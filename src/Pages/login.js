@@ -1,5 +1,5 @@
 import { useState } from "react";
-import Modal from "@mui/material/Modal";
+import {Modal} from "@mui/material/Modal";
 import Backdrop from "@mui/material/Backdrop";
 import  Fade  from "@mui/material/Fade";
 import { Box } from "@mui/material";
