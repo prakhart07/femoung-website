@@ -8,11 +8,16 @@ import { Link, useLocation, useNavigate } from "react-router-dom";
 function Header(){
 
 
-    // const Navigate=useNavigate();
+    const Navigate=useNavigate();
 
-    // function orderNow(){
-    //     Navigate('/order');
-    // }
+    function login(){
+        Navigate('/login');
+    }
+
+    function log(){
+      Navigate('/log');
+  }
+
     return(
         <header className="header" data-header>
     <div className="container fixed-top">
@@ -45,8 +50,12 @@ function Header(){
           </li>
 
           <li className="nav-item">
-            <a href="/login" className="navbar-link" data-nav-link>Login</a>
+            <a className="navbar-link" data-nav-link onClick={login}>Login</a>
           </li>
+
+          {/* <li className="nav-item">
+            <a className="navbar-link" data-nav-link onClick={log}>Log</a>
+          </li> */}
 
         </ul>
       </nav>

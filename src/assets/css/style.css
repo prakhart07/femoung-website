@@ -6,7 +6,9 @@
  * copyright 2022 codewithsadee
  */
 
-
+ @tailwind base;
+ @tailwind components;
+ @tailwind utilities;
 
 
 

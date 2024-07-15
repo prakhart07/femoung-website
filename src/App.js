@@ -13,6 +13,7 @@ import AboutUs from './Pages/aboutUs';
 import Order from './Pages/order';
 import MainScreen from './Pages/mainScreen';
 import Login from './Pages/login';
+import Log from './Pages/log';
 
 
 function App() {
@@ -24,6 +25,7 @@ function App() {
           <Route path='/' element={<MainScreen/>}></Route>
           <Route path='/order' element={<Order/>}></Route>
           <Route path='/login' element={<Login/>}></Route>
+          <Route path='/log' element={<Log/>}></Route>
         </Routes>
       </Router> 
             
