@@ -1,5 +1,6 @@
 import AboutUs from "./aboutUs";
 import ComboDisplay from "./comboDisplay";
+import ComingSoon from "./cominSoon";
 import Dishes from "./dishes";
 import Footer from "./footer";
 import  Header  from "./header";
@@ -22,6 +23,7 @@ function MainScreen(){
             <Dishes/>
             <Menu/>
             <AboutUs/>
+            <ComingSoon/>
       </main>
             <Footer/>
         </div>

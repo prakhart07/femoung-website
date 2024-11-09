@@ -1,0 +1,33 @@
+/* ComingSoon.css */
+
+/* Set the initial state of the container */
+.coming-soon-container {
+    position: absolute;
+    bottom: -100vh; /* Start the container off-screen (below the viewport) */
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(40, 44, 52, 0.8); /* Transparent background */
+    color: white;
+    font-family: Arial, sans-serif;
+    transition: transform 1s ease-in-out, opacity 1s ease-in-out; /* Smooth transition for both transform and opacity */
+    opacity: 0; /* Initially transparent */
+  }
+  
+  /* Trigger the sliding animation */
+  .slide-up {
+    transform: translateY(-100vh); /* Slide the container up into view */
+    opacity: 0; /* Fully visible */
+  }
+  
+  /* Coming Soon Text Styling */
+  h1 {
+    font-size: 3em;
+    text-align: center;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    color: white;
+  }
+  

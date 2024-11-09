@@ -17,6 +17,10 @@ import Log from './Pages/log';
 
 
 function App() {
+
+  setTimeout(()=>{
+    
+  },3000)
   return (
     <div>
       <Router>

@@ -3,12 +3,14 @@ import ReactDOM from 'react-dom/client';
 import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
+import ComingSoon from './Pages/cominSoon';
 // import '../src/assets/js/script.js';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
     <App />
+    {/* <ComingSoon/> */}
   </React.StrictMode>
 );
 
